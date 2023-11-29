@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Heebo", sans-serif;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+}
+
+.wrapper {
+  margin: 4rem 4rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+button {
+  width: 70px;
+  height: 20px;
+}
+
+.formresponse-text {
+  display: none;
+  resize: none;
+}
+
+.clean {
+  display: none;
+}
