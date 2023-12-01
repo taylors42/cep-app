@@ -10,6 +10,7 @@ button.addEventListener("click", async () => {
   response.value = "";
   const textNotClean = document.querySelector(".textarea").value;
   let text = cleanString(textNotClean);
+
   try {
     const dados = await fetch(`https://viacep.com.br/ws/${text}/json`);
     const json = await dados.json();
