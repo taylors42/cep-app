@@ -25,14 +25,20 @@ function CepApp(){
     const handleInputChange = (e) => {
 
         const newValue = e.target.value;
-        const regex = /^[a-zA-Z0-9\s]*$/;
-    
+        const regex = /^[0-9-]+$/;
+        
+        // if (Number.isNaN(+e.target.value))return;
+
+        // setInputValue(newValue);
+
+
         if (regex.test(newValue) || newValue === '')
             {
                 setInputValue(newValue)
             }
-        }
-
+        
+    
+    }
     const handleButtonClick = () => {
         findCep(inputValue)
         console.log(inputValue);
